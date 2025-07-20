@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Beautiful School Memories</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Fullscreen Image Viewer -->
+    <div class="image-viewer" id="imageViewer">
+        <span class="close-viewer">&times;</span>
+        <img class="viewer-image" id="viewerImage">
+        <div class="image-caption" id="imageCaption"></div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Profile Section -->
+        <section class="profile-section">
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="images/bhavya 1.jpg" alt="My Profile" class="profile-image">
+                    <div class="profile-glow"></div>
+                </div>
+                <div class="profile-content">
+                    <h1>My School Days</h1>
+                    <p class="intro-text">A visual journey through my most cherished school memories. Each card holds a special moment that shaped my childhood.</p>
+                    <div class="memory-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">16</span>
+                            <span class="stat-label">Precious Memories</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">12</span>
+                            <span class="stat-label">Wonderful Years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Memory Cards Grid - All 16 Cards -->
+        <section class="memory-gallery">
+            <!-- Card 1 -->
+            <div class="memory-card" data-image="bhavya 2.jpg" data-caption="First day of school - 2005">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 2.jpg" alt="First Day" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">First Day</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>My very first day at school, holding mom's hand tightly, wearing my new uniform with pride.</p>
+                        <div class="card-date">2005</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="memory-card" data-image="bhavya 3.jpg" data-caption="Best friends - 2006">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 3.jpg" alt="Best Friends" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Best Friends</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>The beginning of friendships that would last a lifetime. We shared everything from lunchboxes to secrets.</p>
+                        <div class="card-date">2006</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="memory-card" data-image="bhavya 4.jpg" data-caption="Art competition - 2007">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 4.jpg" alt="Art Competition" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Art Competition</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Won first prize in the inter-school art competition with my painting of the school playground.</p>
+                        <div class="card-date">2007</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="memory-card" data-image="bhavya 5.jpg" data-caption="Annual day performance - 2008">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 5.jpg" alt="Annual Day" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Annual Day</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Performed as a sunflower in the school play. Forgot two lines but covered it with an enthusiastic dance!</p>
+                        <div class="card-date">2008</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="memory-card" data-image="bhavya 6.jpg" data-caption="Science fair - 2009">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 6.jpg" alt="Science Fair" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Science Fair</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Presented my volcano project - the eruption was more dramatic than expected, creating quite a mess!</p>
+                        <div class="card-date">2009</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="memory-card" data-image="bhavya 7.jpg" data-caption="Sports day - 2010">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 7.jpg" alt="Sports Day" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Sports Day</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Won the sack race despite tripping twice. My determination impressed the sports teacher.</p>
+                        <div class="card-date">2010</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="memory-card" data-image="bhavya 8.jpg" data-caption="Elementary graduation - 2010">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 8.jpg" alt="Elementary Graduation" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Elementary Graduation</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Wearing that tiny cap and gown, feeling so grown up. Little did I know how much I'd miss those days.</p>
+                        <div class="card-date">2010</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="memory-card" data-image="bhavya 9.jpg" data-caption="Middle school start - 2010">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 9.jpg" alt="Middle School Start" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Middle School Start</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Navigating between classes with my new schedule. Got lost three times that first week!</p>
+                        <div class="card-date">2010</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="memory-card" data-image="bhavya 10.jpg" data-caption="Band practice - 2011">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 10.jpg" alt="Band Practice" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Band Practice</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Learning the trumpet - challenging but rewarding. My parents probably regretted my instrument choice!</p>
+                        <div class="card-date">2011</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="memory-card" data-image="bhavya 11.jpg" data-caption="School trip - 2011">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 11.jpg" alt="School Trip" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">School Trip</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Our visit to the science museum. The planetarium show sparked my interest in astronomy.</p>
+                        <div class="card-date">2011</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 11 -->
+            <div class="memory-card" data-image="bhavya 12.jpg" data-caption="Debate competition - 2012">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 12.jpg" alt="Debate Competition" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Debate Competition</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>My first inter-school debate. Nervous start but we placed second arguing about school uniforms.</p>
+                        <div class="card-date">2012</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 12 -->
+            <div class="memory-card" data-image="bhavya 13.jpg" data-caption="Math olympiad - 2012">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 13.jpg" alt="Math Olympiad" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Math Olympiad</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Representing our school at regionals. The challenging problems pushed me to think in new ways.</p>
+                        <div class="card-date">2012</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 13 -->
+            <div class="memory-card" data-image="bhavya 14.jpg" data-caption="Middle school graduation - 2013">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 14.jpg" alt="Middle School Graduation" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Middle School Graduation</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Our "senior quotes" in the yearbook make me cringe and smile now. How mature we thought we were!</p>
+                        <div class="card-date">2013</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 14 -->
+            <div class="memory-card" data-image="bhavya 15.jpg" data-caption="High school start - 2013">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 15.jpg" alt="High School Start" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">High School Start</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Everything felt bigger and more serious. Walking in with middle school friends made it easier.</p>
+                        <div class="card-date">2013</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 15 -->
+            <div class="memory-card" data-image="bhavya 16.jpg" data-caption="Science project - 2015">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 16.jpg" alt="Science Project" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">Science Project</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>Months of work on my renewable energy model paid off when selected for the state science fair.</p>
+                        <div class="card-date">2015</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 16 -->
+            <div class="memory-card" data-image="bhavya 17.jpg" data-caption="High school graduation - 2017">
+                <div class="card-inner">
+                    <div class="card-front">
+                        <img src="images/bhavya 17.jpg" alt="High School Graduation" class="card-image">
+                        <div class="card-overlay"></div>
+                        <h3 class="card-title">High School Graduation</h3>
+                    </div>
+                    <div class="card-back">
+                        <p>The bittersweet moment of leaving behind the place that shaped me. Teachers' proud smiles made it all worthwhile.</p>
+                        <div class="card-date">2017</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <p>Created with <i class="fas fa-heart"></i> by Bhavya</p>
+            <p class="footer-note">These memories will stay forever in my heart</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
